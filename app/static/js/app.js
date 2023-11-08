@@ -83,7 +83,7 @@ class Chatbox {
         textField.value = '';
 
         try {
-            const response = await fetch('http://127.0.0.1:5000/predict', {
+            const response = await fetch('https://m8f9mw3ah3.us-east-1.awsapprunner.com/predict', {
                 method: 'POST',
                 body: JSON.stringify({ message: text1, sessionId: sessionId }),
                 mode: 'cors',
