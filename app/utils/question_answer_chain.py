@@ -12,7 +12,6 @@ from langchain.llms import OpenAI
 from langchain.memory import ConversationSummaryMemory, ConversationBufferMemory
 from langchain.prompts import PromptTemplate
 from langchain.vectorstores import FAISS
-from werkzeug.utils import secure_filename
 
 from config import Config
 
