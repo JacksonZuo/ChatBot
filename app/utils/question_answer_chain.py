@@ -123,7 +123,6 @@ embeddings = OpenAIEmbeddings()
 # use relative path to avoid path error
 current_dir = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(current_dir, "..", "..", Config.FAISS_INDEX_PATH)
-db = FAISS.load_local(file_path, embeddings)
 
 
 class NoOpLLMChain(LLMChain):
@@ -151,6 +150,8 @@ def getqa():
         llm=OpenAI(temperature=0), memory_key="chat_history", return_messages=True)
 
     llm = ChatOpenAI(model_name="gpt-3.5-turbo-16k", temperature=0.2, streaming=True)
+
+    db = FAISS.load_local(file_path, embeddings)
 
     qa = ConversationalRetrievalChain.from_llm(
         llm=llm,
