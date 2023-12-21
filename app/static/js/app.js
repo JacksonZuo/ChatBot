@@ -130,7 +130,6 @@ class Chatbox {
     updateChatText(chatbox) {
         const chatmessage = chatbox.querySelector('.chatbox__messages');
 
-        // 清空 chatmessage 中的所有子元素，以便更新消息
         while (chatmessage.firstChild) {
             chatmessage.removeChild(chatmessage.firstChild);
         }
