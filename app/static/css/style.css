@@ -228,6 +228,7 @@ body {
     background: none !important;
     text-decoration: underline !important;
     cursor: pointer !important;
+    font-size: .9rem !important;
 }
 
 
