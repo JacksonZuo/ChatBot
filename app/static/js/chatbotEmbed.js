@@ -115,6 +115,8 @@ body {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /* HEADER */
@@ -430,7 +432,6 @@ body {
         window.location.href = mailtoLink;
     }
 }
-
 
 const chatbox = new Chatbox();
 chatbox.display();
