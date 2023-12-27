@@ -190,6 +190,7 @@ body {
     border-bottom-right-radius: 10px !important;
     border-bottom-left-radius: 10px !important;
     margin-top: 20px !important;
+    font-size: .9rem !important;
 }
 
 
@@ -223,6 +224,7 @@ body {
 .email__button {
     text-align: center !important;
     margin-top: 20px !important;
+    font-size: .9rem !important;
 }
 
 .email__button__send {
