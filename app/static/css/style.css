@@ -1,14 +1,14 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.cb_container * {
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 100%;
-    background: #F1F1F1;
+.cb_container {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 100% !important;
+    background: #F1F1F1 !important;
 }
 
 /**, html {

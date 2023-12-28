@@ -2,17 +2,17 @@
         // inject CSS
         var style = document.createElement('style');
         style.type = 'text/css';
-        style.innerHTML = `* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+        style.innerHTML = `.cb_container * {
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 100%;
-    background: #F1F1F1;
+.cb_container {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 100% !important;
+    background: #F1F1F1 !important;
 }
 
 /**, html {
@@ -232,6 +232,7 @@ body {
     background: none !important;
     text-decoration: underline !important;
     cursor: pointer !important;
+    font-size: .9rem !important;
 }
 
 
@@ -240,7 +241,7 @@ body {
 
         // inject HTML
         document.body.innerHTML += `<!-- a div contains the chatbot -->
-<div class="container">
+<div class="cb_container">
     <div class="chatbox">
         <div class="chatbox__support">
             <div class="chatbox__header">
@@ -306,7 +307,7 @@ body {
     }
 
     displayInitialMessage(chatbox) {
-        const initialMsg = "Hello! I'm your Job Matching Assistant. I can help you find the perfect job opportunity from our job data. Just let me know what you're looking for, such as 'Registered nurse positions in Boston.' If you have questions about specific companies or the application process, feel free to contact our recruiter Jackson at xxx@xenonhealth.com.";
+        const initialMsg = "Hello! I'm your Job Matching Assistant. I can help you find the perfect job opportunity from our job data. Just let me know what you're looking for, such as 'registered nurse positions in New York.' If you have questions about specific jobs or the application process, feel free to contact our recruiter Jackson at yongqiang.zuo@xenonhealth.com";
         let initialMessage = { name: "Chatbot", message: initialMsg };
         this.messages.push(initialMessage);
         this.updateChatText(chatbox);
