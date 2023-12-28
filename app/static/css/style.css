@@ -42,8 +42,6 @@
     display: flex !important;
     flex-direction: column !important;
     background: #eee !important;
-    width: 450px !important;
-    height: 600px !important;
     z-index: -123456 !important;
     opacity: 0 !important;
     transition: all .5s ease-in-out !important;
@@ -68,6 +66,7 @@
     border: none !important;
     outline: none !important;
     cursor: pointer !important;
+    font-size: .9rem !important;
 }
 
 
@@ -107,8 +106,8 @@
 
 .chatbox__support {
     background: white !important;
-    height: 700px !important;
-    width: 450px !important;
+    height: 600px !important;
+    width: 400px !important;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1) !important;
     border-top-left-radius: 20px !important;
     border-top-right-radius: 20px !important;
