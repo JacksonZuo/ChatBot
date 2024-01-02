@@ -156,7 +156,7 @@ class Chatbox {
     onEmailButton() {
 
         const emailSubject = 'Job Inquiry From ChatBot';
-        const emailRecipient = 'hr@example.com';
+        const emailRecipient = 'yongqiang.zuo@xenonhealth.com';
 
         const mailtoLink = `mailto:${emailRecipient}?subject=${emailSubject}`;
 
