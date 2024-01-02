@@ -307,7 +307,7 @@
     }
 
     displayInitialMessage(chatbox) {
-        const initialMsg = "Hello! I'm your Job Matching Assistant. I can help you find the perfect job opportunity from our job data. Just let me know what you're looking for, such as 'registered nurse positions in New York.' If you have questions about specific jobs or the application process, feel free to contact our recruiter Jackson at yongqiang.zuo@xenonhealth.com";
+        const initialMsg = "Hello! I'm your Job Matching Assistant. I can help you find the perfect job opportunity from our job data. Just let me know what you're looking for, such as 'registered nurse positions in New York'. If you have questions about specific jobs or the application process, feel free to contact our recruiter Jackson at yongqiang.zuo@xenonhealth.com";
         let initialMessage = { name: "Chatbot", message: initialMsg };
         this.messages.push(initialMessage);
         this.updateChatText(chatbox);
